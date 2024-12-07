@@ -1,4 +1,3 @@
 # GUI-Project
-Student Attendance Tracker
- HTML, CSS, JavaScript , and JSON REST API for data handling.A form to add attendance records.
-A table to display attendance records with options to edit or delete.C#, JSON REST API for backend operations.CRUD operations for attendance records.
+Personal Expense Tracker
+Design and implement a dual-interface application to help users track daily expenses, analyze spending trends, and manage budgets effectively. The Add Expenses feature lets users log daily expenses through a form built with HTML, styled with CSS, and made interactive with JavaScript. Users enter details like Expense Title, Category, Amount, and Date. The data is sent to the server via a JSON REST API for storage and synchronization.
