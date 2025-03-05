@@ -1,0 +1,251 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8e2f7;
+  
+}
+
+.app {
+  text-align: center;
+  
+}
+.event-container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap:80px;
+  }
+  
+  .event-image {
+    flex: 1; 
+    max-width: 40%; 
+  }
+  
+  .event-banner {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  /* Header Section */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    
+    background-color: #d37ef5;
+    
+    border-bottom: 1px solid #ddd;
+  }
+  .header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex: 1; 
+    text-align: center; 
+    text-shadow: #333;
+  }
+  
+ 
+  .profile-section {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgb(235, 154, 250);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    
+    
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: rgb(133, 170, 249);
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .profile-icon:hover {
+    transform: scale(1.1);
+  }
+  /*cart decaration*/
+  .cart-button {
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+  /*event boxs*/
+  
+  .event-list-container {
+    
+    padding: 20px;
+    flex: 2; /* The event list section takes up 2 times more space than the image */
+    width: 60%;
+    
+  }
+  
+  .event-list-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:black;
+  }
+  
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    gap: 20px;
+    padding: 70px;
+  }
+  
+  .event-box {
+    background: #84aef6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .event-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6435f2;
+  }
+  
+  .event-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color:black;
+  }
+  
+  .event-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #986bf8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .event-box button:hover {
+    background-color: #0056b3;
+  }
+  /* search bar*/
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative; /* For positioning elements inside the search bar */
+  }
+  
+  .search-bar input {
+    padding: 12px 40px 12px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar input:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .search-bar button {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .search-bar button:active {
+    transform: scale(0.95);
+  }
+  .scholarships h2 {
+    color: #4e73df;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .prize{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+  }
+  
+  
